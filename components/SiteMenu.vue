@@ -11,13 +11,13 @@
                     <a href="/">Accueil</a>
                 </li>
                 <li class="mx-4">
-                    <a href="/">Flocage</a>
+                    <a href="/flocages">Flocage</a>
                 </li>
                 <li class="mx-4">
                     <a href="/tissus">Tissus</a>
                 </li>
                 <li class="mx-4">
-                    <a href="/créations">Création</a>
+                    <a href="/creations">Création</a>
                 </li>
                 <li class="mx-4">
                     <a href="/contact">Contact</a>

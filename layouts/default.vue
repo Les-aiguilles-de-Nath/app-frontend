@@ -18,11 +18,6 @@ export default defineComponent({
     components: {
         SiteHeader,
         SiteFooter
-    },
-    data() {
-        return {
-            message: 'Hello Vue!'
-        }
     }
 }) as any
 </script>
