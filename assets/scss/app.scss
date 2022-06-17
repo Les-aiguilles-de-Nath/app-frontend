@@ -1,0 +1,33 @@
+@import '_variables.scss';
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: $cream;
+    background: linear-gradient(120deg, rgba(244,240,229,1) 0%, rgba(236,230,210,1) 100%);
+    font-family: $font_body;
+    font-size: 16px;
+    color: $black;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font_display;
+    color: $contrast;
+}
+
+h1 {
+    font-size: $font_vhuge;
+}
+
+h2 {
+    font-size: $font_huge;
+}
+
+h3 {
+    font-size: $font_vlarge;
+}
+
+h4 {
+    font-size: $font_large;
+}
