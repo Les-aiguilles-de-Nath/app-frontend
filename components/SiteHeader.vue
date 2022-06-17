@@ -1,7 +1,7 @@
 <template>
     <header class="flex justify-between">
         <a href="/">
-            <img class="w-28" src="/public/images/logos/logo.jpeg" alt="Les aiguilles de Nath">
+            <img class="w-28" src="/images/logos/logo.jpeg" alt="Les aiguilles de Nath">
         </a>
         <nav class="flex-1">
             <ul class="flex justify-end">

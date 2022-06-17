@@ -1,4 +1,2 @@
 <template>
-  <h1>Index page</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt aperiam nostrum.</p>
 </template>
