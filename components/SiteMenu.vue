@@ -1,11 +1,11 @@
 <template>
     <div class="site-menu-container">
-        <button class="hamburger-menu">
+        <button class="hamburger-menu" @click.prevent="toggleMenu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav class="site-menu flex items-center">
+        <nav class="site-menu flex items-center" :class="{ open }">
             <ul class="flex justify-end">
                 <li class="mx-4">
                     <a href="/">Accueil</a>
@@ -31,7 +31,16 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-
+    data() {
+        return {
+            open: false
+        }
+    },
+    methods: {
+        toggleMenu() {
+            this.open = !this.open
+        }
+    }
 })
 </script>
 
@@ -45,6 +54,7 @@ export default defineComponent({
         padding: 1em;
         margin-right: -0.5em;
         cursor: pointer;
+        z-index: 20;
 
         span {
             display: block;
@@ -81,8 +91,30 @@ export default defineComponent({
             display: block;
         }
         .site-menu {
-            display: none;
-    }
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: $black;
+            width:90%;
+            height: 100vh;
+            max-width: 250px;
+            color: $pink;
+            transform: translate3d(100%, 0, 0);
+            transition: all .5s cubic-bezier(.08,1.02,.52,.99);
+
+            &.open {
+                transform: translate3d(0, 0, 0);
+            }
+
+            ul {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+        }
     }
 }
 </style>
