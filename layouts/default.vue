@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="site-wrapper">
     <SiteHeader/>
-    <slot/>
+    <div class="site-content">
+        <slot/>
+    </div>
     <SiteFooter/>
   </div>
 </template>
@@ -24,3 +26,16 @@ export default defineComponent({
     }
 }) as any
 </script>
+
+<style lang="scss" scoped>
+.site-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 1200px;
+
+    .site-content {
+        width: 100%;
+    }
+}
+</style>

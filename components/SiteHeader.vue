@@ -1,5 +1,5 @@
 <template>
-    <header class="flex justify-between px-4 py-2">
+    <header class="flex justify-between px-4 py-2 w-full">
         <a class="flex justify-start items-center" href="/">
             <img class="w-20 mr-2" src="/images/logos/logo.png" alt="Les aiguilles de Nath">
             <p class="logo-watermark flex flex-col justify-center">
