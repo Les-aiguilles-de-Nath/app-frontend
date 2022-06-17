@@ -63,16 +63,6 @@ export default defineComponent({
             padding: 1em 0;
             text-align: center;
             margin: 1em 0;
-
-            .btn-primary {
-                background: $contrast;
-                color: $pink;
-                padding: 1em 2em;
-                border-radius: 2em;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                box-shadow: 0 5 8px rgba(darken($contrast, 20), 0.5);
-            }
         }
     }
 }

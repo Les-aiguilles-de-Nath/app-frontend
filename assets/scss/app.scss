@@ -31,3 +31,13 @@ h3 {
 h4 {
     font-size: $font_large;
 }
+
+.btn-primary {
+    background: $contrast;
+    color: $pink;
+    padding: 0.75em 2em;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5 8px rgba(darken($contrast, 20), 0.5);
+}

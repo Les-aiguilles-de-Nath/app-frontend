@@ -27,10 +27,11 @@ export default defineComponent({
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    max-width: 1200px;
 
     .site-content {
         width: 100%;
+        max-width: 1200px;
+        min-height: 80vh;
     }
 }
 </style>
